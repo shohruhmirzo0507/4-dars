@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.photo{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;    
+    margin: auto;
+
+    /* blur = bjr-bjr */
+    filter: blur(5px);
+    /* brightness = yorug'lik */
+    filter: brightness(200%);
+    /* grayscale = oq-qora */
+    filter: grayscale(100%);
+    /* hue-rotate = rang-barang */
+    filter: hue-rotate(30deg);
+    /* invert = rentgen */
+    filter: invert(100%);
+    /* saturate = (rgb)dagi red kuchaytiradi */
+    filter: saturate(200%);
+    /* sepia = 80-yillardagi kinolar */
+    filter: sepia(100%);
+
+    /* filter: grayscale(100%) blur(5px); */
+    transition: .5s;
+}
+.photo:hover{
+    filter: grayscale(0) blur(0);
+}
+
+
